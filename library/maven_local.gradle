@@ -1,0 +1,10 @@
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = '1.0.0'
+        pom.artifactId = 'hmloggerlocal'
+        pom.groupId = 'com.heima.iou'
+//        repository(url: "file:///Users/shilei/.m2/repository/")
+        repository(url: "file:C:\\Users\\Administrator\\.m2\\repository\\")
+    }
+}
